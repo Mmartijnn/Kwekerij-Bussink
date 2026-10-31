@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winkel – Kwekerij Bussink</title>
+    <meta name="description" content="Kamerplanten, tuinplanten, potterie, potgrond en advies. Ontdek het assortiment van de verkoophal van Kwekerij Bussink.">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- MENU: staat op elke pagina; pas je hier iets aan, doe het dan op alle pagina's -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="logo"><img src="images/logokb.png" alt="Kwekerij Bussink"></a>
+            <button class="nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false"><span></span></button>
+            <nav class="site-nav" aria-label="Hoofdmenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="winkel.html" aria-current="page">Winkel</a></li>
+                    <li><a href="kwekersadvies.html">Kwekersadvies</a></li>
+                    <li><a href="acties.html">Acties</a></li>
+                    <li><a href="overons.html">Over ons</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="page-head">
+                <h1 data-key="winkel.titel" data-label="Paginatitel">Winkel</h1>
+            </div>
+
+            <div class="banner">
+                <img data-key="winkel.foto" data-label="Grote foto" src="images/27.jpg" alt="De winkel van Kwekerij Bussink">
+            </div>
+
+            <section class="card prose" data-section="Wat vindt u in de winkel?">
+                <p data-key="winkel.intro" data-label="Inleiding">Ook vindt u bij ons unieke plant/pot combinaties om cadeau te doen of om zelf te houden. In onze winkel vindt u onder andere:</p>
+                <ul class="checklist" data-list="winkel.assortiment" data-label="Wat vindt u in de winkel?" data-item-label="Product">
+                        <li data-item><span data-field="tekst" data-label="Product">Bloeiende kamerplanten</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Groene kamerplanten</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Deco artikelen</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Grote collectie indoor potterie</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Manden in zowel riet als zink</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Geraniums staande / hangende</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Stekperkplanten</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Zomerbloeiers</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Perkplanten</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Vaste planten actie</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Hanging baskets</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Heesters / struiken (groot assortiment)</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Diverse potgronden</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Diverse meststoffen</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Cadeaubonnen van Kwekerij Bussink</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Grote collectie outdoor potterie</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Vakkundig advies</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Diverse leuke acties, zie ook kaskraker</span></li>
+                        <li data-item><span data-field="tekst" data-label="Product">Spaaractie: voor gratis hanging basket (onbeperkt geldig)</span></li>
+                </ul>
+                <p data-key="winkel.slot" data-label="Slotzin">De mooiste producten komen rechtstreeks uit onze kassen.</p>
+                <p>Voor meer informatie kunt u ook kijken op: <a href="http://www.kwekerij-info.nl" target="_blank" rel="noopener noreferrer">www.kwekerij-info.nl</a></p>
+            </section>
+
+            <section data-section="Foto's van de winkel">
+                <p class="prose" style="margin-bottom:16px" data-key="winkel.slider.intro" data-label="Tekst boven de foto's">Bekijk hieronder een selectie van onze producten, acties en inspiratie. Gebruik de pijlen om door de afbeeldingen te bladeren.</p>
+                <div class="slider">
+                    <button class="slider-arrow left" type="button" aria-label="Vorige foto">&#8249;</button>
+                    <button class="slider-arrow right" type="button" aria-label="Volgende foto">&#8250;</button>
+                    <div class="slider-track" data-list="winkel.fotos" data-label="Foto's van de winkel" data-item-label="Foto">
+                    <article class="slide" data-item>
+                        <img data-field="foto" data-label="Foto" src="images/29.jpg" alt="Zomerbloeiers" loading="lazy">
+                        <div class="caption"><h3 data-field="titel" data-label="Titel">Zomerbloeiers</h3><p data-field="tekst" data-label="Tekst">Bij binnenkomst zijn veel zomerbloeiers te vinden</p></div>
+                    </article>
+                    <article class="slide" data-item>
+                        <img data-field="foto" data-label="Foto" src="images/30 (11).JPG" alt="Kamerplanten" loading="lazy">
+                        <div class="caption"><h3 data-field="titel" data-label="Titel">Kamerplanten</h3><p data-field="tekst" data-label="Tekst">Kamerplanten zijn in deze hoek te vinden</p></div>
+                    </article>
+                    <article class="slide" data-item>
+                        <img data-field="foto" data-label="Foto" src="images/31.JPG" alt="Binnen" loading="lazy">
+                        <div class="caption"><h3 data-field="titel" data-label="Titel">Binnen</h3><p data-field="tekst" data-label="Tekst">Hier zijn zowel eenjarige als meerjarige planten te vinden</p></div>
+                    </article>
+                    <article class="slide" data-item>
+                        <img data-field="foto" data-label="Foto" src="images/32.JPG" alt="Buitenruimte" loading="lazy">
+                        <div class="caption"><h3 data-field="titel" data-label="Titel">Buitenruimte</h3><p data-field="tekst" data-label="Tekst">Hier zijn vele vaste planten te vinden</p></div>
+                    </article>
+                    <article class="slide" data-item>
+                        <img data-field="foto" data-label="Foto" src="images/33.JPG" alt="Potterie" loading="lazy">
+                        <div class="caption"><h3 data-field="titel" data-label="Titel">Potterie</h3><p data-field="tekst" data-label="Tekst">In onze hal zijn meerdere typen plantenbakken te vinden</p></div>
+                    </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span data-year>2026</span> Kwekerij Bussink</p>
+        </div>
+    </footer>
+
+    <script src="site.js"></script>
+</body>
+</html>

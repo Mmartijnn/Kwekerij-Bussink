@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact en openingstijden – Kwekerij Bussink</title>
+    <meta name="description" content="Openingstijden, route en contactformulier van Kwekerij Bussink, Kanaal Zuid 250, Lieren.">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- MENU: staat op elke pagina; pas je hier iets aan, doe het dan op alle pagina's -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="logo"><img src="images/logokb.png" alt="Kwekerij Bussink"></a>
+            <button class="nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false"><span></span></button>
+            <nav class="site-nav" aria-label="Hoofdmenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="winkel.html">Winkel</a></li>
+                    <li><a href="kwekersadvies.html">Kwekersadvies</a></li>
+                    <li><a href="acties.html">Acties</a></li>
+                    <li><a href="overons.html">Over ons</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="page-head">
+                <h1 data-key="contact.titel" data-label="Paginatitel">Contact</h1>
+            </div>
+
+            <div class="contact-grid">
+                <section class="card prose" data-section="Contact en route">
+                    <p data-key="contact.tekst" data-label="Tekst">Neem gerust contact op voor vragen, een afspraak of advies. Wij staan voor u klaar met deskundig advies over planten en tuinoplossingen.</p>
+                    <h2 style="margin-top:28px;font-size:1.3rem">Route</h2>
+                    <p data-key="contact.route" data-label="Routebeschrijving">Ligging langs het mooie Apeldoorns Kanaal in de gemeente Apeldoorn. Tegen de woonwijken De Maten en Zuid en goed bereikbaar met auto of fiets.</p>
+                </section>
+
+                <section class="card" data-section="Openingstijden">
+                    <h2 style="margin-bottom:12px">Openingstijden</h2>
+                    <ul class="uren" data-list="contact.uren" data-label="Openingstijden (elke regel apart)" data-item-label="Regel">
+                        <li data-item><span data-field="tekst" data-label="Regel">Juli 2026 geopend</span></li>
+                        <li data-item><span data-field="tekst" data-label="Regel">Maandag t/m vrijdag 9.00 tot 17.30 uur</span></li>
+                        <li data-item><span data-field="tekst" data-label="Regel">Zaterdag 9.00 tot 17.00 uur</span></li>
+                        <li data-item><span data-field="tekst" data-label="Regel">Juli t/m augustus</span></li>
+                        <li data-item><span data-field="tekst" data-label="Regel">Maandag t/m vrijdag 9.00 tot 17.30 uur</span></li>
+                        <li data-item><span data-field="tekst" data-label="Regel">Woensdag 9.00 tot 17.30 uur</span></li>
+                        <li data-item><span data-field="tekst" data-label="Regel">Donderdag 9.00 tot 17.30 uur</span></li>
+                        <li data-item><span data-field="tekst" data-label="Regel">Vrijdag 9.00 tot 17.30 uur</span></li>
+                        <li data-item><span data-field="tekst" data-label="Regel">Zaterdag 9.00 tot 17.00 uur</span></li>
+                        <li data-item><span data-field="tekst" data-label="Regel">April, mei, juni</span></li>
+                        <li data-item><span data-field="tekst" data-label="Regel">Ook geopend op maandag en dinsdag</span></li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="card">
+                <h2>Kom gerust langs</h2>
+                <p class="lead" style="color:var(--tekst-zacht)">Hieronder kunt u uw route bekijken.</p>
+                <div class="kaart-embed">
+                    <iframe src="https://maps.google.com/maps?q=Kanaal%20Zuid%20250%20Lieren%2C%20Nederland&z=15&output=embed" title="Kaart met de locatie van Kwekerij Bussink" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Stuur ons een bericht</h2>
+                <p id="form-message" class="form-message" hidden>Bedankt! Uw bericht is verzonden.</p>
+
+                <!-- Het formulier wordt verstuurd via formsubmit.co. Eenmalig: de eerste keer
+                     krijgt info@kwekerij-bussink.nl een bevestigingsmail die geactiveerd moet worden. -->
+                <form class="contact-form" action="https://formsubmit.co/info@kwekerij-bussink.nl" method="POST">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="Nieuw bericht via de website">
+                    <input type="hidden" name="_next" value="">
+                    <input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                    <label for="name">Naam</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+
+                    <label for="subject">Onderwerp</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Bericht</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button class="btn" type="submit">Verstuur</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span data-year>2026</span> Kwekerij Bussink</p>
+        </div>
+    </footer>
+
+    <script src="site.js"></script>
+</body>
+</html>

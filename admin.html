@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Beheer – Kwekerij Bussink</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <!-- 1. INLOGGEN -->
+    <main id="screen-login" class="auth" hidden>
+        <form class="panel" id="form-login">
+            <img class="auth-logo" src="images/logokb.png" alt="Kwekerij Bussink">
+            <h1>Beheer</h1>
+            <p class="hint">Log in om teksten en foto's van de website aan te passen.</p>
+            <label for="login-password">Wachtwoord</label>
+            <input id="login-password" type="password" autocomplete="current-password" required>
+            <p class="error" id="login-error" role="alert" hidden></p>
+            <button class="btn" type="submit">Inloggen</button>
+            <p class="small"><a href="#" id="to-setup">Beheerder? Instellingen wijzigen</a></p>
+        </form>
+    </main>
+
+    <!-- 2. EENMALIG INSTELLEN (door de webbouwer) -->
+    <main id="screen-setup" class="auth" hidden>
+        <form class="panel wide" id="form-setup">
+            <h1>Beheer instellen</h1>
+            <p class="hint">Eenmalig door de beheerder. Het GitHub-token wordt versleuteld met het wachtwoord opgeslagen, zodat de klant alleen dat wachtwoord hoeft te kennen. Zie de README voor het aanmaken van het token.</p>
+
+            <label for="setup-repo">GitHub-repository (gebruikersnaam/repo)</label>
+            <input id="setup-repo" type="text" placeholder="bijv. jansen/kwekerij-bussink" required>
+
+            <label for="setup-branch">Branch</label>
+            <input id="setup-branch" type="text" value="main" required>
+
+            <label for="setup-token">GitHub-token (alleen voor deze repository, Contents: Read and write)</label>
+            <input id="setup-token" type="password" autocomplete="off" placeholder="github_pat_…" required>
+
+            <label for="setup-pw">Nieuw wachtwoord voor de klant (minimaal 12 tekens)</label>
+            <input id="setup-pw" type="password" autocomplete="new-password" minlength="12" required>
+
+            <label for="setup-pw2">Herhaal wachtwoord</label>
+            <input id="setup-pw2" type="password" autocomplete="new-password" minlength="12" required>
+
+            <p class="error" id="setup-error" role="alert" hidden></p>
+            <button class="btn" type="submit">Opslaan</button>
+            <p class="small"><a href="#" id="to-login">Terug naar inloggen</a></p>
+        </form>
+    </main>
+
+    <!-- 3. EDITOR -->
+    <div id="screen-editor" hidden>
+        <header class="bar">
+            <div class="bar-inner">
+                <img src="images/logokb.png" alt="" class="bar-logo">
+                <strong>Beheer</strong>
+                <span class="spacer"></span>
+                <a href="index.html" target="_blank" rel="noopener">Bekijk de website</a>
+                <button class="link" id="btn-logout" type="button">Uitloggen</button>
+            </div>
+        </header>
+
+        <div class="wrap">
+            <p class="hint">Kies een pagina, pas teksten of foto's aan en klik onderaan op <strong>Opslaan en publiceren</strong>. Na 1 à 2 minuten staat de wijziging online.</p>
+            <nav class="tabs" id="tabs" aria-label="Pagina's"></nav>
+            <div id="panel"></div>
+        </div>
+
+        <div class="savebar">
+            <div class="bar-inner">
+                <span id="save-status">Geen wijzigingen</span>
+                <span class="spacer"></span>
+                <button class="btn" id="btn-save" type="button" disabled>Opslaan en publiceren</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading" class="loading">Laden…</div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

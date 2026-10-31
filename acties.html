@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acties – Kwekerij Bussink</title>
+    <meta name="description" content="Actuele acties en spaaracties van Kwekerij Bussink.">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- MENU: staat op elke pagina; pas je hier iets aan, doe het dan op alle pagina's -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="logo"><img src="images/logokb.png" alt="Kwekerij Bussink"></a>
+            <button class="nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false"><span></span></button>
+            <nav class="site-nav" aria-label="Hoofdmenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="winkel.html">Winkel</a></li>
+                    <li><a href="kwekersadvies.html">Kwekersadvies</a></li>
+                    <li><a href="acties.html" aria-current="page">Acties</a></li>
+                    <li><a href="overons.html">Over ons</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="page-head">
+                <h1 data-key="acties.titel" data-label="Paginatitel">Acties</h1>
+            </div>
+
+            <section class="card rijen" data-section="Acties">
+                <div data-list="acties.items" data-label="Acties" data-item-label="Actie">
+                <article class="rij" data-item>
+                    <div class="rij-foto"><img data-field="foto" data-label="Foto" src="images/13.jpg" alt="Hanging baskets" loading="lazy"></div>
+                    <div>
+                        <h2 data-field="titel" data-label="Titel">Hanging baskets</h2>
+                        <div data-field="tekst" data-label="Tekst (lege regel = nieuwe alinea)" data-type="paragraphs"><p>Bij ons ontvangt u spaarzegels bij uw aankopen, en bij een volle spaarkaart kunt u een hanging basket uitzoeken t.w.v. € 9,95.</p></div>
+                    </div>
+                </article>
+                <article class="rij" data-item>
+                    <div class="rij-foto"><img data-field="foto" data-label="Foto" src="images/14.png" alt="Onze winkel van bovenaf" loading="lazy"></div>
+                    <div>
+                        <h2 data-field="titel" data-label="Titel">Onze winkel van bovenaf</h2>
+                        <div data-field="tekst" data-label="Tekst (lege regel = nieuwe alinea)" data-type="paragraphs"><p>U kunt hier ruim parkeren, er is voldoende plek.</p></div>
+                    </div>
+                </article>
+                <article class="rij" data-item>
+                    <div class="rij-foto"><img data-field="foto" data-label="Foto" src="images/15.jpg" alt="Vaste planten" loading="lazy"></div>
+                    <div>
+                        <h2 data-field="titel" data-label="Titel">Vaste planten</h2>
+                        <div data-field="tekst" data-label="Tekst (lege regel = nieuwe alinea)" data-type="paragraphs"><p>Vaste planten actie:</p><p>12 stuks voor maar € 21,95</p></div>
+                    </div>
+                </article>
+                <article class="rij" data-item>
+                    <div class="rij-foto"><img data-field="foto" data-label="Foto" src="images/14.png" alt="Producten" loading="lazy"></div>
+                    <div>
+                        <h2 data-field="titel" data-label="Titel">Producten</h2>
+                        <div data-field="tekst" data-label="Tekst (lege regel = nieuwe alinea)" data-type="paragraphs"><p>De mooiste producten, rechtstreeks uit onze kassen.</p></div>
+                    </div>
+                </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span data-year>2026</span> Kwekerij Bussink</p>
+        </div>
+    </footer>
+
+    <script src="site.js"></script>
+</body>
+</html>
