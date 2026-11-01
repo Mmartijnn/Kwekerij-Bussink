@@ -1,14 +1,5 @@
 /* ==========================================================================
-   KWEKERIJ BUSSINK – beheerpagina (admin.html)
-
-   Werking in het kort:
-   - De site staat op GitHub Pages (geen server). Deze pagina schrijft
-     wijzigingen rechtstreeks naar de GitHub-repository via de GitHub API.
-   - "Inloggen" = wachtwoord invullen. Daarmee wordt in de browser het
-     (versleutelde) GitHub-token uit admin-config.json ontsleuteld.
-   - Alles wat bewerkbaar is, wordt automatisch uit de HTML-pagina's gelezen
-     (elementen met data-key / data-list). Wijzigingen komen in content.json,
-     nieuwe foto's in images/uploads/. Alles gaat in één commit.
+admin pagina
    ========================================================================== */
 (function () {
     'use strict';
@@ -86,7 +77,7 @@
         return deriveKey(password, b64.dec(cfg.salt)).then(function (key) {
             return crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64.dec(cfg.iv) }, key, b64.dec(cfg.data));
         }).then(function (buf) { return new TextDecoder().decode(buf); });
-    }
+    } 
 
     /* ---------------------------------------------------------------- */
     /* GitHub API                                                       */
