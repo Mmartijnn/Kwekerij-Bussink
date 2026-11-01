@@ -1,11 +1,3 @@
-/* ==========================================================================
-   KWEKERIJ BUSSINK – STIJLBLAD
-   --------------------------------------------------------------------------
-   Wil je iets kleins aanpassen? Begin dan bij "1. INSTELLINGEN" hieronder.
-   Kleuren, lettertype, afronding en breedte staan daar op één plek.
-   ========================================================================== */
-
-
 /* 1. INSTELLINGEN
    -------------------------------------------------------------------------- */
 :root {
@@ -94,7 +86,9 @@ main > .container { display: grid; gap: var(--ruimte); }
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255, 255, 255, .94);
+    /*background: rgba(255, 255, 255, .94);*/
+    background: rgba(255, 255, 255, 0.90);
+    
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--lijn);
