@@ -13,7 +13,11 @@
    ========================================================================== */
 (function () {
     'use strict';
-
+    // Haal ".html" uit de adresbalk (alleen op de live site)
+    if (location.protocol === 'https:') {
+    var schoon = location.pathname.replace(/(^|\/)index\.html$/, '$1').replace(/\.html$/, '');
+    if (schoon !== location.pathname) history.replaceState(null, '', schoon + location.search + location.hash);
+    }
     /* ---- 1. Inhoud uit content.json ---- */
     function setValue(el, type, value) {
         value = value == null ? '' : String(value);
