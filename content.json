@@ -63,17 +63,17 @@
     ],
     "advies.items": [
       {
-        "foto": "images/13.jpg",
+        "foto": "images/uploads/20260423-122645-mwqpgy2t.jpg",
         "titel": "Grond🌱",
         "tekst": "Een sterke plant begint met goede grond, wij hebben meerdere soorten grond beschikbaar voor de juiste planten."
       },
       {
-        "foto": "images/uploads/7-mwqncmyr.jpg",
+        "foto": "images/uploads/20260730-125837-mwqpg9au.jpg",
         "titel": "Weer",
         "tekst": "Sommige planten staan liever in de zon en anderen liever in de schaduw, kies de juiste plant voor de juiste plek.˚˖𓍢ִ໋❀"
       },
       {
-        "foto": "images/31.JPG",
+        "foto": "images/uploads/20260816-131821-mwqpi56o.jpg",
         "titel": "Voeding",
         "tekst": "Goede voeding maakt de plant gezond en sterker."
       }
@@ -126,6 +126,53 @@
       },
       {
         "foto": "images/uploads/20260816-131908-mwqp9gzx.jpg",
+        "titel": "",
+        "tekst": ""
+      }
+    ],
+    "advies.galerij": [
+      {
+        "foto": "images/37.JPG",
+        "titel": "",
+        "tekst": ""
+      },
+      {
+        "foto": "images/38.JPG",
+        "titel": "",
+        "tekst": ""
+      },
+      {
+        "foto": "images/uploads/20260730-130048-mwqpk6g5.jpg",
+        "titel": "",
+        "tekst": ""
+      },
+      {
+        "foto": "images/43.JPG",
+        "titel": "",
+        "tekst": ""
+      },
+      {
+        "foto": "images/41.JPG",
+        "titel": "",
+        "tekst": ""
+      },
+      {
+        "foto": "images/uploads/20260730-130149-mwqpixy3.jpg",
+        "titel": "",
+        "tekst": ""
+      },
+      {
+        "foto": "images/62.jpg",
+        "titel": "",
+        "tekst": ""
+      },
+      {
+        "foto": "images/53.jpg",
+        "titel": "",
+        "tekst": ""
+      },
+      {
+        "foto": "images/55.jpg",
         "titel": "",
         "tekst": ""
       }
