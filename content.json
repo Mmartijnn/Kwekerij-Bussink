@@ -58,6 +58,23 @@
       {
         "tekst": "Spaaractie: voor gratis hanging basket (onbeperkt geldig)"
       }
+    ],
+    "advies.items": [
+      {
+        "foto": "images/13.jpg",
+        "titel": "Grond🌱",
+        "tekst": "Een sterke plant begint met goede grond, wij hebben meerdere soorten grond beschikbaar voor de juiste planten."
+      },
+      {
+        "foto": "images/uploads/3-mwqmo5y3.jpg",
+        "titel": "Weer",
+        "tekst": "Sommige planten staan liever in de zon en anderen liever in de schaduw, kies de juiste plant voor de juiste plek.˚˖𓍢ִ໋❀"
+      },
+      {
+        "foto": "images/31.JPG",
+        "titel": "Voeding",
+        "tekst": "Goede voeding maakt de plant gezond en sterker."
+      }
     ]
   }
 }
