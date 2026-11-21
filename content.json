@@ -1,1 +1,61 @@
-{}
+{
+  "fields": {},
+  "lists": {
+    "winkel.assortiment": [
+      {
+        "tekst": "Bloeiende kamerplanten"
+      },
+      {
+        "tekst": "Kamerplanten"
+      },
+      {
+        "tekst": "Deco artikelen"
+      },
+      {
+        "tekst": "Grote collectie indoor potterie"
+      },
+      {
+        "tekst": "Manden in zowel riet als zink"
+      },
+      {
+        "tekst": "Geraniums staande / hangende"
+      },
+      {
+        "tekst": "Stekperkplanten"
+      },
+      {
+        "tekst": "Zomerbloeiers"
+      },
+      {
+        "tekst": "Perkplanten"
+      },
+      {
+        "tekst": "Vaste planten actie"
+      },
+      {
+        "tekst": "Hanging baskets"
+      },
+      {
+        "tekst": "Heesters / struiken (groot assortiment)"
+      },
+      {
+        "tekst": "Diverse potgronden"
+      },
+      {
+        "tekst": "Diverse meststoffen"
+      },
+      {
+        "tekst": "Cadeaubonnen van Kwekerij Bussink"
+      },
+      {
+        "tekst": "Grote collectie outdoor potterie"
+      },
+      {
+        "tekst": "Diverse leuke acties, zie ook de spaarkaarten actie"
+      },
+      {
+        "tekst": "Spaaractie: voor gratis hanging basket (onbeperkt geldig)"
+      }
+    ]
+  }
+}
