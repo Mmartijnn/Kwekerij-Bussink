@@ -156,8 +156,8 @@ main > .container { display: grid; gap: var(--ruimte); }
     padding: clamp(24px, 4vw, 48px);
 }
 
-.page-head { padding: 28px 4px 0; }
-.page-head p { margin-top: 10px; color: var(--tekst-zacht); max-width: 60ch; }
+.page-head { padding: 5px 1px 0; }
+.page-head p { margin-top: 0px; color: var(--tekst-zacht); max-width: 60ch; }
 
 .prose p { max-width: 68ch; }
 .prose p + p { margin-top: 1.1em; }
