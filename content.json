@@ -77,6 +77,58 @@
         "titel": "Voeding",
         "tekst": "Goede voeding maakt de plant gezond en sterker."
       }
+    ],
+    "winkel.fotos": [
+      {
+        "foto": "images/40.JPG",
+        "titel": "Parkeren",
+        "tekst": "voor de ingang"
+      },
+      {
+        "foto": "images/30 (11).JPG",
+        "titel": "Ingang",
+        "tekst": "Kom gerust langs, u bent van harte welkom"
+      },
+      {
+        "foto": "images/31.JPG",
+        "titel": "Binnen en buiten",
+        "tekst": "Eenjarige en meerjarige planten"
+      },
+      {
+        "foto": "images/32.JPG",
+        "titel": "Buitenruimte",
+        "tekst": "Hier vind u vaste planten"
+      },
+      {
+        "foto": "images/33.JPG",
+        "titel": "",
+        "tekst": ""
+      },
+      {
+        "foto": "images/20260730_130234.jpg",
+        "titel": "",
+        "tekst": ""
+      },
+      {
+        "foto": "images/49.jpg",
+        "titel": "Kwekerij",
+        "tekst": ""
+      },
+      {
+        "foto": "images/50.jpg",
+        "titel": "",
+        "tekst": ""
+      },
+      {
+        "foto": "images/51.jpg",
+        "titel": "",
+        "tekst": ""
+      },
+      {
+        "foto": "images/52.jpg",
+        "titel": "",
+        "tekst": ""
+      }
     ]
   }
 }
