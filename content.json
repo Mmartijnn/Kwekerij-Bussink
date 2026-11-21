@@ -176,6 +176,53 @@
         "titel": "",
         "tekst": ""
       }
+    ],
+    "acties.items": [
+      {
+        "foto": "images/20260417_101448.jpg",
+        "titel": "Hanging baskets",
+        "tekst": "Bij ons ontvangt u spaarzegels bij uw aankopen, en bij een volle spaarkaart kunt u een hanging basket uitzoeken t.w.v. € 9,95."
+      },
+      {
+        "foto": "images/45.JPG",
+        "titel": "Vaste planten",
+        "tekst": "Vaste planten actie:\n\n12 stuks voor maar € 21,95"
+      },
+      {
+        "foto": "images/14.png",
+        "titel": "Onze winkel van bovenaf",
+        "tekst": "U kunt hier ruim parkeren, er is voldoende plek."
+      },
+      {
+        "foto": "images/49.jpg",
+        "titel": "Producten",
+        "tekst": "De mooiste producten, rechtstreeks uit onze kassen."
+      },
+      {
+        "foto": "images/52.jpg",
+        "titel": "Meerdere soorten planten",
+        "tekst": "Kijk gerust rond!"
+      },
+      {
+        "foto": "images/uploads/20260730-130722-mwqplvvp.jpg",
+        "titel": "Meerjarige planten",
+        "tekst": "Winterhard"
+      },
+      {
+        "foto": "images/20260730_125837.jpg",
+        "titel": "Zomerbloeiers",
+        "tekst": "Eenjarig"
+      },
+      {
+        "foto": "images/60.jpg",
+        "titel": "Kamerplanten",
+        "tekst": "Mooi voor binnen"
+      },
+      {
+        "foto": "images/61.jpg",
+        "titel": "Potterie",
+        "tekst": "Potten om u plant in te zetten"
+      }
     ]
   }
 }
