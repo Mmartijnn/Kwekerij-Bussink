@@ -443,3 +443,21 @@ main > .container { display: grid; gap: var(--ruimte); }
     body { animation: none; }
     .slider-track { scroll-behavior: auto; }
 }
+
+/* FOTO'S LADEN ZACHT IN */
+.js main img { opacity: 0; transform: scale(1.02); transition: opacity .7s ease, transform .9s ease; }
+.js main img.is-loaded { opacity: 1; transform: none; }
+
+.js .hero-photo:not(.foto-klaar), .js .banner:not(.foto-klaar), .js .rij-foto:not(.foto-klaar),
+.js .slide:not(.foto-klaar), .js .galerij-item:not(.foto-klaar) {
+    background: linear-gradient(90deg, #e6eae3 0%, #f4f6f2 50%, #e6eae3 100%);
+    background-size: 200% 100%;
+    animation: glans 1.6s ease-in-out infinite;
+}
+@keyframes glans { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+    .js main img { transition: none; transform: none; }
+    .js .hero-photo:not(.foto-klaar), .js .banner:not(.foto-klaar), .js .rij-foto:not(.foto-klaar),
+    .js .slide:not(.foto-klaar), .js .galerij-item:not(.foto-klaar) { animation: none; }
+}

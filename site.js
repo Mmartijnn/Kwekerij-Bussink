@@ -75,6 +75,24 @@
             .catch(function () { return {}; });
     }
 
+        /* Foto's: eerste direct laden, de rest rustig, en alles zacht laten verschijnen */
+    function zachteFotos() {
+        window.fotosKlaar = true;
+        document.querySelectorAll('main img').forEach(function (img, i) {
+            if (i === 0) { img.loading = 'eager'; img.fetchPriority = 'high'; }
+            else if (!img.loading) { img.loading = 'lazy'; }
+            img.decoding = 'async';
+            if (img.dataset.zacht) return;
+            img.dataset.zacht = '1';
+            var klaar = function () {
+                img.classList.add('is-loaded');
+                if (img.parentElement) img.parentElement.classList.add('foto-klaar');
+            };
+            if (img.complete && img.naturalWidth) klaar();
+            else { img.addEventListener('load', klaar); img.addEventListener('error', klaar); }
+        });
+    }
+
     /* ---- 2. Interactie ---- */
     function initMenu() {
         var header = document.querySelector('.site-header');
@@ -121,6 +139,7 @@
     initContactForm();
     loadContent().then(function (content) {
         applyContent(content);
+        zachteFotos();
         initSliders();   // pas na het opbouwen van de lijsten
     });
 })();
