@@ -416,8 +416,8 @@ main > .container { display: grid; grid-template-columns: minmax(0, 1fr); gap: v
 /* Hoe sterk de foto in zijn vlak zoomt (1.03 = 3% groter, 1.08 = 8% groter) */
 .hero-photo, .banner   { --zoom: 1.03; }   /* grote foto's */
 .rij-foto, .slide      { --zoom: 1.05; }   /* middelgrote foto's */
-.galerij-item          { --zoom: 1.04; }   /* galerij: het vlak groeit ook, dus de foto minder */
-.collage img           { --zoom: 1.08; }   /* kleine foto's */
+.galerij-item          { --zoom: 1.03; }   /* galerij: het vlak groeit ook, dus de foto minder */
+.collage img           { --zoom: 1.07; }   /* kleine foto's */
 
 /* Het hele vlak wordt groter (hoofdfoto's en galerij) */
 .hero-photo, .banner { position: relative; transition: transform .25s ease, box-shadow .25s ease; }
